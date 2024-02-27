@@ -9,9 +9,9 @@ The Arsenal from "More Maritime: Seaside Sectors" is a mighty addition to any se
 
 ## Mod Support
 
-* Leugi's Unique District Icons
 * City Lights
-* GrayPockets - Fixes
+* Leugi's Unique District Icons
+* More Maritime: Seaside Sectors - Cooks
 
 ## Requirements
 
