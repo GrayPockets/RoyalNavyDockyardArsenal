@@ -11,7 +11,6 @@ The Arsenal from "More Maritime: Seaside Sectors" is a mighty addition to any se
 
 * City Lights
 * Leugi's Unique District Icons
-* More Maritime: Seaside Sectors - Cooks
 
 ## Requirements
 

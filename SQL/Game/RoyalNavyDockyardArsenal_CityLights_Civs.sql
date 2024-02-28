@@ -1,5 +1,4 @@
--- In GrayPockets Patch More Maritime Seaside Sectors, adjacencies are added to unique RuralCommunities from the Arsenal (352)
--- Apply the same to the Royal Navy Dockyard
+-- Add adjacencies to RuralCommunity from the Arsenal
 
 INSERT INTO "District_Adjacencies"
 	(	"DistrictType",					"YieldChangeID"					)
