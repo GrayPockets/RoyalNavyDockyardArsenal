@@ -46,24 +46,23 @@ INSERT INTO "MutuallyExclusiveDistricts"
 VALUES
 	(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'DISTRICT_ENCAMPMENT'			),
 	(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'DISTRICT_IKANDA'				),
-	(	'DISTRICT_ROYAL_NAVY_DOCKYARD',	'DISTRICT_THANH'				),
 	(	'DISTRICT_ENCAMPMENT',			'DISTRICT_ROYAL_NAVY_DOCKYARD'	),
-	(	'DISTRICT_IKANDA',				'DISTRICT_ROYAL_NAVY_DOCKYARD'	),
-	(	'DISTRICT_THANH',				'DISTRICT_ROYAL_NAVY_DOCKYARD'	);
+	(	'DISTRICT_IKANDA',				'DISTRICT_ROYAL_NAVY_DOCKYARD'	);
 		
 DELETE FROM "District_Adjacencies"
 WHERE "DistrictType" = 'DISTRICT_ROYAL_NAVY_DOCKYARD';
 
 -- Since Arsenals already increase Strategic Resource Stockpiles, Workshop of the World affects Industrial Zone buildings
+-- The _ENGLAND versions were added in Rulers of England, but seem to do the exact same thing
 
 UPDATE Modifiers
-SET "SubjectRequirementSetId" = 'BUILDING_IS_WORKSHOP_ENGLAND'
+SET "SubjectRequirementSetId" = 'BUILDING_IS_WORKSHOP'
 WHERE ModifierId = 'TRAIT_ADJUST_LIGHTHOUSE_STOCKPILE_CAP';
 
 UPDATE Modifiers
-SET "SubjectRequirementSetId" = 'BUILDING_IS_FACTORY_ENGLAND'
+SET "SubjectRequirementSetId" = 'BUILDING_IS_FACTORY'
 WHERE ModifierId = 'TRAIT_ADJUST_SHIPYARD_STOCKPILE_CAP';
 
 UPDATE Modifiers
-SET "SubjectRequirementSetId" = 'BUILDING_IS_POWER_PLANT_ENGLAND'
+SET "SubjectRequirementSetId" = 'BUILDING_IS_POWER_PLANT'
 WHERE ModifierId = 'TRAIT_ADJUST_SEAPORT_STOCKPILE_CAP';
